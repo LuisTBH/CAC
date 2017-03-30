@@ -1,0 +1,475 @@
+3/30 23:46:50 ******************************************************
+3/30 23:46:50 ** condor_scheduniv_exec.4926.0 (CONDOR_DAGMAN) STARTING UP
+3/30 23:46:50 ** /usr/local/condor/bin/condor_dagman
+3/30 23:46:50 ** $CondorVersion: 7.0.4 Jul 16 2008 BuildID: 95033 $
+3/30 23:46:50 ** $CondorPlatform: I386-LINUX_RHEL5 $
+3/30 23:46:50 ** PID = 20591
+3/30 23:46:50 ** Log last touched time unavailable (No such file or directory)
+3/30 23:46:50 ******************************************************
+3/30 23:46:50 Using config source: /usr/local/condor/etc/condor_config
+3/30 23:46:50 Using local config sources: 
+3/30 23:46:50    /home/condor/condor_config.local
+3/30 23:46:50 DaemonCore: Command Socket at <192.168.1.1:14822>
+3/30 23:46:50 DAGMAN_SUBMIT_DELAY setting: 0
+3/30 23:46:50 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+3/30 23:46:50 DAGMAN_STARTUP_CYCLE_DETECT setting: 0
+3/30 23:46:50 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+3/30 23:46:50 allow_events (DAGMAN_IGNORE_DUPLICATE_JOB_EXECUTION, DAGMAN_ALLOW_EVENTS) setting: 114
+3/30 23:46:50 DAGMAN_RETRY_SUBMIT_FIRST setting: 1
+3/30 23:46:50 DAGMAN_RETRY_NODE_FIRST setting: 0
+3/30 23:46:50 DAGMAN_MAX_JOBS_IDLE setting: 0
+3/30 23:46:50 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+3/30 23:46:50 DAGMAN_MUNGE_NODE_NAMES setting: 1
+3/30 23:46:50 DAGMAN_DELETE_OLD_LOGS setting: 1
+3/30 23:46:50 DAGMAN_PROHIBIT_MULTI_JOBS setting: 0
+3/30 23:46:50 DAGMAN_SUBMIT_DEPTH_FIRST setting: 0
+3/30 23:46:50 DAGMAN_ABORT_DUPLICATES setting: 1
+3/30 23:46:50 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: 1
+3/30 23:46:50 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+3/30 23:46:50 argv[0] == "condor_scheduniv_exec.4926.0"
+3/30 23:46:50 argv[1] == "-Debug"
+3/30 23:46:50 argv[2] == "3"
+3/30 23:46:50 argv[3] == "-Lockfile"
+3/30 23:46:50 argv[4] == "dagman.cmd.lock"
+3/30 23:46:50 argv[5] == "-Condorlog"
+3/30 23:46:50 argv[6] == "/nfs/master/user4/prac-condor/dagman/prep.log"
+3/30 23:46:50 argv[7] == "-Dag"
+3/30 23:46:50 argv[8] == "dagman.cmd"
+3/30 23:46:50 argv[9] == "-Rescue"
+3/30 23:46:50 argv[10] == "dagman.cmd.rescue"
+3/30 23:46:50 DAG Lockfile will be written to dagman.cmd.lock
+3/30 23:46:50 DAG Input file is dagman.cmd
+3/30 23:46:50 Rescue DAG will be written to dagman.cmd.rescue
+3/30 23:46:50 All DAG node user log files:
+3/30 23:46:50   /nfs/master/user4/prac-condor/dagman/prep.log (Condor)
+3/30 23:46:50   /nfs/master/user4/prac-condor/dagman/intsin.log (Condor)
+3/30 23:46:50   /nfs/master/user4/prac-condor/dagman/intsum.log (Condor)
+3/30 23:46:50 Parsing dagman.cmd ...
+3/30 23:46:50 Dag contains 3 total jobs
+3/30 23:46:50 Truncating any older versions of log files...
+3/30 23:46:50 MultiLogFiles: truncating older version of /nfs/master/user4/prac-condor/dagman/intsin.log
+3/30 23:46:50 Sleeping for 12 seconds to ensure ProcessId uniqueness
+3/30 23:47:02 Bootstrapping...
+3/30 23:47:02 Number of pre-completed nodes: 0
+3/30 23:47:02 Registering condor_event_timer...
+3/30 23:47:03 Submitting Condor Node A job(s)...
+3/30 23:47:03 submitting: condor_submit -a dag_node_name' '=' 'A -a +DAGManJobId' '=' '4926 -a DAGManJobId' '=' '4926 -a submit_event_notes' '=' 'DAG' 'Node:' 'A -a +DAGParentNodeNames' '=' '"" prep.condor
+3/30 23:47:03 From submit: Submitting job(s).
+3/30 23:47:03 From submit: Logging submit event(s).
+3/30 23:47:03 From submit: 1 job(s) submitted to cluster 4927.
+3/30 23:47:03 	assigned Condor ID (4927.0)
+3/30 23:47:03 Just submitted 1 job this cycle...
+3/30 23:47:03 Event: ULOG_SUBMIT for Condor Node A (4927.0)
+3/30 23:47:03 Number of idle job procs: 1
+3/30 23:47:04 Of 3 nodes total:
+3/30 23:47:04  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+3/30 23:47:04   ===     ===      ===     ===     ===        ===      ===
+3/30 23:47:04     0       0        1       0       0          2        0
+3/30 23:51:59 Event: ULOG_EXECUTE for Condor Node A (4927.0)
+3/30 23:51:59 Number of idle job procs: 0
+3/30 23:51:59 Event: ULOG_JOB_TERMINATED for Condor Node A (4927.0)
+3/30 23:51:59 Node A job proc (4927.0) completed successfully.
+3/30 23:51:59 Node A job completed
+3/30 23:51:59 Number of idle job procs: 0
+3/30 23:51:59 Of 3 nodes total:
+3/30 23:51:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+3/30 23:51:59   ===     ===      ===     ===     ===        ===      ===
+3/30 23:51:59     1       0        0       0       1          1        0
+3/30 23:52:04 Sleeping for one second for log file consistency
+3/30 23:52:05 Submitting Condor Node B job(s)...
+3/30 23:52:05 submitting: condor_submit -a dag_node_name' '=' 'B -a +DAGManJobId' '=' '4926 -a DAGManJobId' '=' '4926 -a submit_event_notes' '=' 'DAG' 'Node:' 'B -a +DAGParentNodeNames' '=' '"A" intsin.condor
+3/30 23:52:05 From submit: Submitting job(s)..................................................
+3/30 23:52:06 From submit: Logging submit event(s)..................................................
+3/30 23:52:06 From submit: 50 job(s) submitted to cluster 4928.
+3/30 23:52:06 	assigned Condor ID (4928.0)
+3/30 23:52:06 Just submitted 1 job this cycle...
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.0)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.1)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.2)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.3)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.4)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.5)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.6)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.7)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.8)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.9)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.10)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.11)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.12)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.13)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.14)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.15)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.16)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.17)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.18)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.19)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.20)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.21)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.22)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.23)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.24)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.25)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.26)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.27)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.28)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.29)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.30)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.31)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.32)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.33)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.34)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.35)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.36)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.37)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.38)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.39)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.40)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.41)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.42)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.43)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.44)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.45)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.46)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.47)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.48)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Event: ULOG_SUBMIT for Condor Node B (4928.49)
+3/30 23:52:06 Number of idle job procs: 1
+3/30 23:52:06 Of 3 nodes total:
+3/30 23:52:06  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+3/30 23:52:06   ===     ===      ===     ===     ===        ===      ===
+3/30 23:52:06     1       0        1       0       0          1        0
+3/30 23:52:21 Event: ULOG_EXECUTE for Condor Node B (4928.5)
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_EXECUTE for Condor Node B (4928.2)
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.5)
+3/30 23:52:21 Node B job proc (4928.5) completed successfully.
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_EXECUTE for Condor Node B (4928.18)
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.2)
+3/30 23:52:21 Node B job proc (4928.2) completed successfully.
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_EXECUTE for Condor Node B (4928.10)
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.18)
+3/30 23:52:21 Node B job proc (4928.18) completed successfully.
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_EXECUTE for Condor Node B (4928.12)
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.10)
+3/30 23:52:21 Node B job proc (4928.10) completed successfully.
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_EXECUTE for Condor Node B (4928.13)
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:21 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.12)
+3/30 23:52:21 Node B job proc (4928.12) completed successfully.
+3/30 23:52:21 Number of idle job procs: 0
+3/30 23:52:26 Event: ULOG_EXECUTE for Condor Node B (4928.21)
+3/30 23:52:26 Number of idle job procs: 0
+3/30 23:52:26 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.13)
+3/30 23:52:26 Node B job proc (4928.13) completed successfully.
+3/30 23:52:26 Number of idle job procs: 0
+3/30 23:52:26 Event: ULOG_EXECUTE for Condor Node B (4928.20)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.21)
+3/30 23:52:27 Node B job proc (4928.21) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.16)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.20)
+3/30 23:52:27 Node B job proc (4928.20) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.4)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.16)
+3/30 23:52:27 Node B job proc (4928.16) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.22)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.4)
+3/30 23:52:27 Node B job proc (4928.4) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.3)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.22)
+3/30 23:52:27 Node B job proc (4928.22) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.15)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.3)
+3/30 23:52:27 Node B job proc (4928.3) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.7)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.15)
+3/30 23:52:27 Node B job proc (4928.15) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.8)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.7)
+3/30 23:52:27 Node B job proc (4928.7) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.23)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.8)
+3/30 23:52:27 Node B job proc (4928.8) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.6)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.23)
+3/30 23:52:27 Node B job proc (4928.23) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_EXECUTE for Condor Node B (4928.9)
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:27 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.6)
+3/30 23:52:27 Node B job proc (4928.6) completed successfully.
+3/30 23:52:27 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.14)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.9)
+3/30 23:52:32 Node B job proc (4928.9) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.0)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.14)
+3/30 23:52:32 Node B job proc (4928.14) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.19)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.0)
+3/30 23:52:32 Node B job proc (4928.0) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.11)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.19)
+3/30 23:52:32 Node B job proc (4928.19) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.1)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.11)
+3/30 23:52:32 Node B job proc (4928.11) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.17)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.1)
+3/30 23:52:32 Node B job proc (4928.1) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.24)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.17)
+3/30 23:52:32 Node B job proc (4928.17) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.25)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.24)
+3/30 23:52:32 Node B job proc (4928.24) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.26)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.25)
+3/30 23:52:32 Node B job proc (4928.25) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.27)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.26)
+3/30 23:52:32 Node B job proc (4928.26) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.28)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.27)
+3/30 23:52:32 Node B job proc (4928.27) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.29)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.28)
+3/30 23:52:32 Node B job proc (4928.28) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_EXECUTE for Condor Node B (4928.30)
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:32 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.29)
+3/30 23:52:32 Node B job proc (4928.29) completed successfully.
+3/30 23:52:32 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.30)
+3/30 23:52:37 Node B job proc (4928.30) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.32)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.33)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.32)
+3/30 23:52:37 Node B job proc (4928.32) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.33)
+3/30 23:52:37 Node B job proc (4928.33) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.35)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.36)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.35)
+3/30 23:52:37 Node B job proc (4928.35) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.37)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.36)
+3/30 23:52:37 Node B job proc (4928.36) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.38)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.37)
+3/30 23:52:37 Node B job proc (4928.37) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.38)
+3/30 23:52:37 Node B job proc (4928.38) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.40)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.41)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.40)
+3/30 23:52:37 Node B job proc (4928.40) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.41)
+3/30 23:52:37 Node B job proc (4928.41) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.43)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.43)
+3/30 23:52:37 Node B job proc (4928.43) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.45)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.46)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.47)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.45)
+3/30 23:52:37 Node B job proc (4928.45) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.48)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.46)
+3/30 23:52:37 Node B job proc (4928.46) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.49)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.47)
+3/30 23:52:37 Node B job proc (4928.47) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.31)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.34)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_EXECUTE for Condor Node B (4928.39)
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.48)
+3/30 23:52:37 Node B job proc (4928.48) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.49)
+3/30 23:52:37 Node B job proc (4928.49) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:37 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.31)
+3/30 23:52:37 Node B job proc (4928.31) completed successfully.
+3/30 23:52:37 Number of idle job procs: 0
+3/30 23:52:43 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.34)
+3/30 23:52:43 Node B job proc (4928.34) completed successfully.
+3/30 23:52:43 Number of idle job procs: 0
+3/30 23:52:43 Event: ULOG_EXECUTE for Condor Node B (4928.42)
+3/30 23:52:43 Number of idle job procs: 0
+3/30 23:52:43 Event: ULOG_EXECUTE for Condor Node B (4928.44)
+3/30 23:52:43 Number of idle job procs: 0
+3/30 23:52:43 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.39)
+3/30 23:52:43 Node B job proc (4928.39) completed successfully.
+3/30 23:52:43 Number of idle job procs: 0
+3/30 23:52:43 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.42)
+3/30 23:52:43 Node B job proc (4928.42) completed successfully.
+3/30 23:52:43 Number of idle job procs: 0
+3/30 23:52:43 Event: ULOG_JOB_TERMINATED for Condor Node B (4928.44)
+3/30 23:52:43 Node B job proc (4928.44) completed successfully.
+3/30 23:52:43 Node B job completed
+3/30 23:52:43 Number of idle job procs: 0
+3/30 23:52:43 Of 3 nodes total:
+3/30 23:52:43  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+3/30 23:52:43   ===     ===      ===     ===     ===        ===      ===
+3/30 23:52:43     2       0        0       0       1          0        0
+3/30 23:52:48 Sleeping for one second for log file consistency
+3/30 23:52:49 Submitting Condor Node C job(s)...
+3/30 23:52:49 submitting: condor_submit -a dag_node_name' '=' 'C -a +DAGManJobId' '=' '4926 -a DAGManJobId' '=' '4926 -a submit_event_notes' '=' 'DAG' 'Node:' 'C -a +DAGParentNodeNames' '=' '"B" sum.condor
+3/30 23:52:49 From submit: Submitting job(s).
+3/30 23:52:49 From submit: Logging submit event(s).
+3/30 23:52:49 From submit: 1 job(s) submitted to cluster 4929.
+3/30 23:52:49 	assigned Condor ID (4929.0)
+3/30 23:52:49 Just submitted 1 job this cycle...
+3/30 23:52:49 Event: ULOG_SUBMIT for Condor Node C (4929.0)
+3/30 23:52:49 Number of idle job procs: 1
+3/30 23:52:49 Of 3 nodes total:
+3/30 23:52:49  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+3/30 23:52:49   ===     ===      ===     ===     ===        ===      ===
+3/30 23:52:49     2       0        1       0       0          0        0
+3/30 23:52:54 Event: ULOG_EXECUTE for Condor Node C (4929.0)
+3/30 23:52:54 Number of idle job procs: 0
+3/30 23:52:59 Event: ULOG_JOB_TERMINATED for Condor Node C (4929.0)
+3/30 23:52:59 Node C job proc (4929.0) completed successfully.
+3/30 23:52:59 Node C job completed
+3/30 23:52:59 Number of idle job procs: 0
+3/30 23:52:59 Of 3 nodes total:
+3/30 23:52:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+3/30 23:52:59   ===     ===      ===     ===     ===        ===      ===
+3/30 23:52:59     3       0        0       0       0          0        0
+3/30 23:52:59 All jobs Completed!
+3/30 23:52:59 Note: 0 total job deferrals because of -MaxJobs limit (0)
+3/30 23:52:59 Note: 0 total job deferrals because of -MaxIdle limit (0)
+3/30 23:52:59 Note: 0 total job deferrals because of node category throttles
+3/30 23:52:59 Note: 0 total PRE script deferrals because of -MaxPre limit (0)
+3/30 23:52:59 Note: 0 total POST script deferrals because of -MaxPost limit (0)
+3/30 23:52:59 **** condor_scheduniv_exec.4926.0 (condor_DAGMAN) EXITING WITH STATUS 0

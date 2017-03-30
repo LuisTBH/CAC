@@ -1,0 +1,16 @@
+000 (4927.000.000) 03/30 23:47:03 Job submitted from host: <192.168.1.1:40323>
+    DAG Node: A
+...
+001 (4927.000.000) 03/30 23:51:56 Job executing on host: <192.168.1.102:44510>
+...
+005 (4927.000.000) 03/30 23:51:57 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
