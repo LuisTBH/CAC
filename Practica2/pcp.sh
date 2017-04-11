@@ -16,7 +16,7 @@ if ssh cac$i "test -d $2"; then
 else
    echo "La carpeta destino no existe, esta será creada y luego se
 copiará el archivo"
-   ssh cac2 "mkdir $2"
+   ssh cac$i "mkdir $2"
    echo "Copiando archivo en el nodo $i......"
    scp $1 cac$i:$2/$1
 fi
