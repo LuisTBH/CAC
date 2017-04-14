@@ -1,0 +1,9 @@
+##
+##	Ohio Trollius
+##
+##	Function:	- LAM process schema
+##			- single daemon version
+##
+
+lamd $inet_topo
+
